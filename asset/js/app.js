@@ -11,7 +11,7 @@ function timedCount(){
 }
 timedCount() */
 
-window.sr = ScrollReveal();
+ window.sr = ScrollReveal();
 
 sr.reveal('.project',{
     duration: 4000,
@@ -29,3 +29,16 @@ sr.reveal('.about-story',{
     origin: 'left',
     distance: '-50px'
 }) 
+
+window.addEventListener('scroll', function(){
+    const nav = document.querySelector('.container-nav')
+    const position = nav.getBoundingClientRect()
+    console.log(position.top + scrollY)
+    if(position.top + scrollY > 0){
+        nav.classList.add('back-black')
+    }else{
+        nav.classList.remove('back-black')
+    }
+})
+
+

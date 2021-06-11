@@ -63,29 +63,50 @@ p,a,label{
     height: 45vw;
     /*height: 40vw;*/
 }
-.container-nav{
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.container-nav .bar-nav{
-    width: 100%;
-    max-height: 100%;
-}
-.bar-nav{
-    justify-content: space-between;
-}
-.logo-icono{
-    font-family: 'Merriweather', serif;
-}
+
+
 /*style of redes in header*/
-.line-redes{
-    width: auto;
-}
-.line-redes hr{
-    margin: 0;
-}
-.container-redes .nav-redes{
+.col-social-media .container-social-media{
+    width: 100%;
     height: 100%;
+}
+.container-social-media .bar-media{
+    width: 100%;
+    height: 100%;
+}
+.bar-media .list-media{
+    max-width: 100%;
+    height: 100%;
+}
+.bar-media{
+    background-color: none;
+}
+.container-social-media{
+    background-color: none;
+    border-right: 2px solid tan;
+}
+.media{
+    display: flex;
+    align-items: center;
+}
+.list-media{
+    align-items: center;
+    flex-direction: column;
+}
+.list-media .media{
+    width: 25%;
+    background-color: none;
+}
+.media .icono-media{
+    width: 100%;
+}
+.icono-media{
+    color: tan;
+    transition: .5s;
+}
+.icono-media:hover{
+    color: white;
+    width: 120%;
 }
 /*style of*/
 .effect-machine{
@@ -306,13 +327,53 @@ p,a,label{
         font-size: 10px;
     }
     /*====================*/
-    /*header*/
+    /*-------------style in header------------------*/
     .headboard-web{
         height: 55vh;
     }
-    .bar-nav{
-        display: none;
+    /*style of menu*/
+
+    .col-menu .container-menu{
+        max-width: 100%;
     }
+    .container-menu{
+        height: 50vh;
+        background-color: burlywood;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+    }
+    .container-menu .menu{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: none;
+    }
+    .items-menu{
+        width: 100%;
+        height: 100%;
+        background-color: blueviolet;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .items-menu .item-menu{
+        width: 100%;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: center;
+    }
+    .item-menu{
+        display: flex;
+    }
+
     /*style about me*/
     .about-feactures{
         width: 90%;
