@@ -334,7 +334,7 @@ p,a,label{
     /*style of menu*/
 
     .col-menu .container-menu{
-        max-width: 100%;
+        width: 100%;
     }
     .container-menu{
         height: 50vh;
