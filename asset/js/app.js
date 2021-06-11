@@ -41,4 +41,12 @@ window.addEventListener('scroll', function(){
     }
 })
 
-
+addEventListener('DOMContentLoaded', () => {
+    const btnMenu = document.getElementById('btn-menu-nav')
+    if(btnMenu){
+        btnMenu.addEventListener('click', () =>{
+            const itemsResponsive = document.querySelector('.items-menu')
+            itemsResponsive.classList.toggle('show')
+        })
+    }
+})

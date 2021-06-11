@@ -314,6 +314,9 @@ p,a,label{
 .color-tan{
     color: tan;
 }
+ul.show{
+    top: 65px;
+}
 /*========================================*/
 @media  (max-width: 750px) {
     p{
@@ -339,7 +342,7 @@ p,a,label{
         width: 100%;
     }
     .container-menu{
-        height: 90vh;
+        height: auto;
         background-color: burlywood;
         display: flex;
         flex-wrap: wrap;
@@ -354,18 +357,21 @@ p,a,label{
         flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: row-reverse;
-        background-color: black;
+        background-color: blue;
     }
     .items-menu{
-        width: 95%;
-        height: 100%;
-        background-color: blueviolet;
+        width: 100%;
+        height: 90vh;
+        background-color: rgb(133, 5, 5);
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 5px;
+        margin-top: 0;
+        position: fixed;
+        top: -100vh;
+        transition: .4s;
     }
     .items-menu .item-menu{
         width: 100%;
@@ -376,6 +382,9 @@ p,a,label{
     .item-menu > a{
         width: 100%;
         margin: 0;
+        background-color: white;
+        color: black;
+        border-bottom: 2px solid black;
     }
 
     /*style about me*/
