@@ -11,24 +11,24 @@ function timedCount(){
 }
 timedCount() */
 
- window.sr = ScrollReveal();
+//  window.sr = ScrollReveal();
 
-sr.reveal('.project',{
-    duration: 4000,
-    origin: 'top',
-    distance: '-50px'
-})
+// sr.reveal('.project',{
+//     duration: 4000,
+//     origin: 'top',
+//     distance: '-50px'
+// })
 
-sr.reveal('.about-feactures',{
-    duration: 2000,
-    origin: 'right',
-    distance: '-100px'
-})   
-sr.reveal('.about-story',{
-    duration: 2000,
-    origin: 'left',
-    distance: '-50px'
-}) 
+// sr.reveal('.about-feactures',{
+//     duration: 2000,
+//     origin: 'right',
+//     distance: '-100px'
+// })   
+// sr.reveal('.about-story',{
+//     duration: 2000,
+//     origin: 'left',
+//     distance: '-50px'
+// }) 
 
 window.addEventListener('scroll', function(){
     const nav = document.querySelector('.container-nav')

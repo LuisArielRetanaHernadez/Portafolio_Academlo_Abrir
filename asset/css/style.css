@@ -156,7 +156,7 @@ p,a,label{
     flex-wrap: wrap;
     justify-content: space-around;
     box-sizing: border-box;
-    padding: 2%;
+    padding: 0;
     height: auto;
 }
 .container-projects .project{
@@ -199,14 +199,16 @@ p,a,label{
 /*========================================*/
 /*styles reusable*/
 .btn{
-    background-color: black;
+    background-color: #4CAF50; /* Green */
     border: none;
-    outline: none;
     color: white;
-    padding: 10px 32px;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+    display: inline-block;
     font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 .btn-over{
     outline: none;
@@ -337,7 +339,7 @@ p,a,label{
         width: 100%;
     }
     .container-menu{
-        height: 50vh;
+        height: 90vh;
         background-color: burlywood;
         display: flex;
         flex-wrap: wrap;
@@ -351,10 +353,11 @@ p,a,label{
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
-        background-color: none;
+        flex-direction: row-reverse;
+        background-color: black;
     }
     .items-menu{
-        width: 100%;
+        width: 95%;
         height: 100%;
         background-color: blueviolet;
         margin: 0;
@@ -362,7 +365,7 @@ p,a,label{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        margin-top: 5px;
     }
     .items-menu .item-menu{
         width: 100%;
@@ -370,8 +373,9 @@ p,a,label{
         display: flex;
         justify-content: center;
     }
-    .item-menu{
-        display: flex;
+    .item-menu > a{
+        width: 100%;
+        margin: 0;
     }
 
     /*style about me*/
