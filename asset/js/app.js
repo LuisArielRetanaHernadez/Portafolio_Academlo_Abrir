@@ -31,13 +31,13 @@ timedCount() */
 // }) 
 
 window.addEventListener('scroll', function(){
-    const nav = document.querySelector('.container-nav')
+    const nav = document.querySelector('.container-menu')
     const position = nav.getBoundingClientRect()
     console.log(position.top + scrollY)
     if(position.top + scrollY > 0){
-        nav.classList.add('back-black')
+        nav.classList.add('back-menu-scroll');     
     }else{
-        nav.classList.remove('back-black')
+        nav.classList.remove('back-menu-scroll')
     }
 })
 
