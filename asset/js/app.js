@@ -35,7 +35,7 @@ window.addEventListener('scroll', function(){
     const position = nav.getBoundingClientRect()
     console.log(position.top + scrollY)
     if(position.top + scrollY > 0){
-        nav.classList.add('back-menu-scroll');     
+        nav.classList.add('back-menu-scroll');           
     }else{
         nav.classList.remove('back-menu-scroll')
     }
